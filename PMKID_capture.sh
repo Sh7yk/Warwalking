@@ -10,6 +10,6 @@ INTERFACE=$1
 while (true)
 do
 killall wifite;
-wifite -i $INTERFACE -p 10 --wpa -ic --pmkid --pmkid-timeout 45;
+wifite -i $INTERFACE -p 10 --wpa --pmkid --pmkid-timeout 45;
 sleep 1;
 done;
