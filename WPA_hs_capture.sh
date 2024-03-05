@@ -10,6 +10,6 @@ INTERFACE=$1
 while (true)
 do
 killall wifite;
-wifite -i $INTERFACE -p 5 --wpa --random-mac --kill --skip-crack --clients-only -ic --wpadt 2 --wpat 15 --no-pmkid --no-wps;
+wifite --kill -i $INTERFACE -p 8 --wpa --random-mac --skip-crack --clients-only -ic --wpadt 2 --wpat 15 --no-pmkid --no-wps;
 sleep 1;
 done;
