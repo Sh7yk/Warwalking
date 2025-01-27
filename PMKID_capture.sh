@@ -4,12 +4,7 @@ if [ "$#" -ne 1 ]; then
 	echo "Usage $0 <interface>"
 	exit 1
 fi
-
+airmon-ng check kill
 INTERFACE=$1
+wifite -i $INTERFACE -p 10 -inf --wpa --pmkid --pmkid-timeout 45 --daemon -ic -pow 30;
 
-while (true)
-do
-killall wifite;
-wifite -i $INTERFACE -p 10 --wpa --pmkid --pmkid-timeout 45;
-sleep 1;
-done;
