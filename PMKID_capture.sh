@@ -6,5 +6,5 @@ if [ "$#" -ne 1 ]; then
 fi
 airmon-ng check kill
 INTERFACE=$1
-wifite -i $INTERFACE -p 10 -inf --wpa --pmkid --pmkid-timeout 45 --daemon -ic -pow 30;
+wifite -i $INTERFACE -p 10 -inf --wpa --random-mac --pmkid --pmkid-timeout 45 --daemon -ic -pow 30;
 
