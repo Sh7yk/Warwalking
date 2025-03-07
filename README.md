@@ -13,7 +13,6 @@ chmod +x *.sh
 ```
 ## Usage
 ```bash
-airmon-ng check kill
 sudo ./WPA_hs_capture.sh wlan0
 ```
 ## All your actions must be for the good, and the auditing must be approved by audit client, be ethical!
