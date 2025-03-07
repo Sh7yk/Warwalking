@@ -6,7 +6,7 @@ Nothing special, just for automation.This is a selection of small scripts for au
 
 ## Install
 ```bash
-sudo apt install wifite hcxtools airckrack-ng
+sudo apt install wifite hcxtools airckrack-ng -y
 git clone https://github.com/Sh7yk/Warwalking.git
 cd Warwalking
 chmod +x *.sh
